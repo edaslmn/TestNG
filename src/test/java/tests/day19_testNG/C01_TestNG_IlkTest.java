@@ -28,11 +28,13 @@ public class C01_TestNG_IlkTest {
 
         // arama sonucunda urun bulunabildigini test edin
         WebElement sonucYaziElementi = driver.findElement(By.className("product-count-text"));
+        
 
         String unexpectedSonucYazisi = "0 Products Found";
         String actualSonucYazisi = sonucYaziElementi.getText();
 
         Assert.assertNotEquals(actualSonucYazisi,unexpectedSonucYazisi);
+
 
         // sayfayi kapatin
         driver.quit();
