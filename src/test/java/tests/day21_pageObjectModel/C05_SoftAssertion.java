@@ -37,7 +37,7 @@ public class C05_SoftAssertion {
         ReusableMethods.bekle(2);
 
         // 5. Password kutusuna “password” yazin
-        zeroWebappPage.passWordKutusu.sendKeys(ConfigReader.getProperty("zeroPassword"));
+        zeroWebappPage.passwordKutusu.sendKeys(ConfigReader.getProperty("zeroPassword"));
         ReusableMethods.bekle(2);
 
         // 6. Sign in tusuna basin

@@ -3,9 +3,12 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.html.HTMLInputElement;
 import utilities.Driver;
 
 public class ZeroWebappPage {
+
+    public HTMLInputElement payBillsLinki;
 
     public ZeroWebappPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -18,7 +21,7 @@ public class ZeroWebappPage {
     public WebElement loginKutusu;
 
     @FindBy (id = "user_password")
-    public WebElement passWordKutusu;
+    public WebElement passwordKutusu;
 
     @FindBy(name = "submit")
     public WebElement loginSayfasiSignInButonu;
@@ -38,6 +41,4 @@ public class ZeroWebappPage {
     @FindBy(id = "pc_currency")
     public WebElement dropDownCurrencyMenu;
 
-    @FindBy(xpath = "//*[@value='EUR']")
-    public WebElement dropdownEurozone;
 }

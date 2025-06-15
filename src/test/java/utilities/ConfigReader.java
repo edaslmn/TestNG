@@ -23,7 +23,8 @@ public class ConfigReader {
            test method'una dondurur
      */
 
-    static Properties properties; // configuration.properties'deki tum key-value'ler yuklendi
+    static Properties properties; // class calismaya baslar baslamaz
+    // configuration.properties'deki tum key-value'ler yuklendi
 
     static {
 
@@ -32,7 +33,7 @@ public class ConfigReader {
 
             FileInputStream fis= new FileInputStream(dosyaYolu);
             properties= new Properties();
-            properties.load(fis);
+            properties.load(fis); // fis'in okudugu tum bilgileri properties objesine yukler
 
 
         } catch (IOException e) {
@@ -49,11 +50,3 @@ public class ConfigReader {
 
 
 }
-
-
-
-
-
-
-
-

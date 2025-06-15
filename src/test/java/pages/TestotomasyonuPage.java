@@ -8,7 +8,6 @@ import utilities.Driver;
 import java.util.List;
 
 public class TestotomasyonuPage {
-
     // ARTIK herhangi bir url'deki locate'leri
     // tekrar tekrar yapmayacagiz
     // her url icin bir page class'i olusturup
